@@ -103,7 +103,7 @@ Note: If you change database credentials, ensure they match across all configura
    docker-compose exec web python manage.py migrate
    ```
 
-   # Then, check that the tables are created correctly
+   #### Then, check that the tables are created correctly
    ```
    docker-compose exec db psql -U postgres -d crypto_exchange_1 -c '\dt'
    ```
@@ -264,39 +264,9 @@ For questions or assistance, contact [tatyoko28@gmail.com](mailto:tatyoko28@gmai
     <img src="./Photos/11.png" alt="Screenshot 11" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
     <img src="./Photos/12.png" alt="Screenshot 12" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
     <img src="./Photos/13.png" alt="Screenshot 13" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-    <img src="./Photos/14.png" alt="Screenshot 14" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-    <img src="./Photos/15.png" alt="Screenshot 15" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
   </div>
 </div>
 
-<style>
-/* Responsive grid layout */
-.screenshot-grid {
-  /* Mobile: 1 column */
-  grid-template-columns: 1fr;
-}
-
-/* Tablet: 2 columns */
-@media (min-width: 768px) {
-  .screenshot-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Small desktop: 3 columns */
-@media (min-width: 1024px) {
-  .screenshot-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Large desktop: 4 columns */
-@media (min-width: 1400px) {
-  .screenshot-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-</style>
 
 ---
 
