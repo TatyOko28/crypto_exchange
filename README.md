@@ -180,7 +180,7 @@ For questions or assistance, contact [tatyoko28@gmail.com](mailto:tatyoko28@gmai
 
 ## Screenshots
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <img src="/Photos/1.png" width="200" alt="Product details Screen"/>
+  <img src="/Photos/1.png" width="500" alt="Product details Screen"/>
   <img src="/Photos/2.png" width="200" alt="Product details Screen"/>
   <img src="/Photos/3.png" width="200" alt="Product details Screen"/>
   <img src="/Photos/4.png" width="200" alt="Product details Screen"/>
