@@ -179,21 +179,9 @@ For questions or assistance, contact [tatyoko28@gmail.com](mailto:tatyoko28@gmai
 ---
 
 ## Screenshots
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <img src="/Photos/1.png" width="500" alt="Product details Screen"/>
-  <img src="/Photos/2.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/3.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/4.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/5.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/6.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/7.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/8.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/9.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/10.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/11.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/12.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/13.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/14.png" width="200" alt="Product details Screen"/>
-  <img src="/Photos/15.png" width="200" alt="Product details Screen"/>
-</div>
+
+![Product details Screen 1](./Photos/1.png)
+![Product details Screen 2](./Photos/2.png)
+<!-- ... autres images ... -->
+
 ---
