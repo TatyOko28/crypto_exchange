@@ -307,9 +307,49 @@ The project uses two different configuration files depending on the execution mo
 
 ---
 
-## Environment Configuration
+## Technologies Used
 
-The project uses two different configuration files depending on the execution mode:
+### Backend
+- **Python 3.9+**: Core programming language
+- **Django 4.2+**: Web framework
+- **Django REST Framework**: API development
+- **Celery**: Asynchronous task processing
+- **Channels**: WebSocket support
+- **PostgreSQL**: Primary database
+- **Redis**: Caching and message broker
 
-### For Local Development (py manage.py runserver)
-1. Copy `.env.local` to `.env`:
+### Security & Authentication
+- **JWT**: Token-based authentication
+- **Argon2**: Password hashing
+- **Django CORS Headers**: Cross-Origin Resource Sharing
+- **Django Rate Limit**: API rate limiting
+
+### Testing & Quality
+- **Pytest**: Testing framework
+- **Factory Boy**: Test data generation
+- **Coverage**: Code coverage reporting
+- **Flake8**: Code linting
+- **Black**: Code formatting
+- **isort**: Import sorting
+
+### Documentation
+- **Swagger/OpenAPI**: API documentation
+- **drf-yasg**: Swagger generator
+
+### File Storage & Processing
+- **AWS S3**: Cloud storage
+- **Pillow**: Image processing
+- **Whitenoise**: Static files serving
+
+### Monitoring & Logging
+- **Sentry**: Error tracking
+- **Django Debug Toolbar**: Development debugging
+
+### Task Scheduling
+- **django-celery-beat**: Periodic task scheduling
+
+### Development & Deployment
+- **Docker**: Containerization
+- **Docker Compose**: Multi-container orchestration
+- **Python Dotenv**: Environment variables management
+
