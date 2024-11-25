@@ -12,6 +12,7 @@ class User(AbstractUser):
     failed_login_attempts = models.IntegerField(default=0)
     account_locked = models.BooleanField(default=False)
     
+    
     def set_security_code(self, code):
         """Définir le code de sécurité de l'utilisateur"""
         if len(code) != 6 or not code.isdigit():
@@ -45,3 +46,4 @@ class KYCDocument(models.Model):
     rejection_reason = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    

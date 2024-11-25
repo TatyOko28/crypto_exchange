@@ -1,12 +1,9 @@
-FROM python:3.9-slim
+FROM python:3.9
 
 # Installation des dépendances système
 RUN apt-get update && apt-get install -y \
-    postgresql-client \
-    gcc \
-    python3-dev \
-    libpq-dev \
-    netcat-traditional \
+    libargon2-0 \
+    libargon2-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -17,7 +14,7 @@ ENV PYTHONUNBUFFERED 1
 
 # Installation des dépendances Python
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Script d'attente pour la base de données
 COPY scripts/wait-for-db.sh /wait-for-db.sh

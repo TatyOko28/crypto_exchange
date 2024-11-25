@@ -1,0 +1,20 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "password": "pbkdf2_sha256$216$...hashed-password...",
+            "is_superuser": true,
+            "is_staff": true
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "Example Group",
+            "permissions": []
+        }
+    }
+]

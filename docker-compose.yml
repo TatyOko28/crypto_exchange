@@ -14,20 +14,20 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/crypto_exchange
       - REDIS_URL=redis://redis:6379/0
-      
+
   db:
     image: postgres:13
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=crypto_exchange
+      - POSTGRES_DB=crypto_exchange_1
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PASSWORD=mercure
 
   redis:
     image: redis:6
     ports:
-      - "6379:6379"
+      - "5432:5432"
 
   celery:
     build: .
@@ -40,6 +40,7 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/crypto_exchange
       - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP=True
 
   celery-beat:
     build: .
@@ -52,6 +53,7 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/crypto_exchange
       - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP=True
 
 volumes:
-  postgres_data: 
+  postgres_data:
