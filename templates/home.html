@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange Platform</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Crypto Exchange Platform</h1>
+        <nav>
+            {% if user.is_authenticated %}
+                <a href="{% url 'admin:index' %}">Admin</a>
+                <a href="/api/v1/wallet/">Wallet</a>
+                <a href="/api/v1/orders/">Orders</a>
+                <a href="/swagger/">API Docs</a>
+            {% else %}
+                <a href="{% url 'admin:login' %}">Login</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <main>
+        <section id="rates">
+            <h2>Exchange Rates</h2>
+            <div id="rates-container">
+                <!-- Les taux seront chargés dynamiquement -->
+            </div>
+        </section>
+
+        <section id="news">
+            <h2>Latest News</h2>
+            <div id="news-container">
+                <!-- Les actualités seront chargées dynamiquement -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crypto Exchange Platform</p>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html> 
