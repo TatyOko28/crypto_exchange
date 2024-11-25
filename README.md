@@ -125,15 +125,17 @@ Note: If you change database credentials, ensure they match across all configura
 
 ---
 
-# To stop the application later
----
+#### To stop the application later
+```bash
 docker-compose down
----
+```
 
-#  To restart it quickly next time
----
+#### To restart it quickly next time
+
+```bash
+docker-compose down
 docker-compose up -d
----
+```
 
 
 
@@ -245,105 +247,53 @@ For questions or assistance, contact [tatyoko28@gmail.com](mailto:tatyoko28@gmai
 ---
 
 ## Screenshots
+
 <div align="center">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <!-- Exchange Platform Overview -->
-    <img src="./Photos/1.png" 
-         alt="Exchange Platform Overview" 
-         style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-    />
-    
-    <!-- Trading Interface -->
-    <img src="./Photos/2.png" 
-         alt="Trading Interface" 
-         style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-    />
+  <div class="screenshot-grid" style="display: grid; gap: 20px; padding: 20px; max-width: 1400px; margin: 0 auto;">
+    <!-- Images will be arranged in a responsive grid -->
+    <img src="./Photos/1.png" alt="Screenshot 1" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/2.png" alt="Screenshot 2" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/3.png" alt="Screenshot 3" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/4.png" alt="Screenshot 4" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/5.png" alt="Screenshot 5" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/6.png" alt="Screenshot 6" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/7.png" alt="Screenshot 7" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/8.png" alt="Screenshot 8" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/9.png" alt="Screenshot 9" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/10.png" alt="Screenshot 10" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/11.png" alt="Screenshot 11" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/12.png" alt="Screenshot 12" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/13.png" alt="Screenshot 13" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/14.png" alt="Screenshot 14" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./Photos/15.png" alt="Screenshot 15" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
   </div>
-
-  <details>
-    <summary>View More Screenshots</summary>
-    <div style="max-width: 800px; margin: 20px auto;">
-      <!-- Wallet Dashboard -->
-      <img src="./Photos/3.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-      
-      <!-- Transaction History -->
-      <img src="./Photos/4.png"
-           alt="Transaction History"
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-      
-      <!-- Settings Panel -->
-      <img src="./Photos/5.png"
-           alt="Settings Panel"
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-      
-      <!-- Support Chat -->
-      <img src="./Photos/6.png"
-           alt="Support Chat Interface"
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-
-       <!-- Wallet Dashboard -->
-      <img src="./Photos/7.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-
-       <!-- Wallet Dashboard -->
-      <img src="./Photos/8.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-
-       <!-- Wallet Dashboard -->
-      <img src="./Photos/9.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-
-       <!-- Wallet Dashboard -->
-      <img src="./Photos/10.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-
-       <!-- Wallet Dashboard -->
-      <img src="./Photos/11.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-
-       <!-- Wallet Dashboard -->
-      <img src="./Photos/12.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />
-
-       <!-- Wallet Dashboard -->
-      <img src="./Photos/13.png"
-           alt="Wallet Dashboard" 
-           style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-      />     
-    </div>
-  </details>
 </div>
 
 <style>
-@media (max-width: 768px) {
-  img {
-    margin: 10px 0 !important;
+/* Responsive grid layout */
+.screenshot-grid {
+  /* Mobile: 1 column */
+  grid-template-columns: 1fr;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+  .screenshot-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1200px) {
-  .screenshot-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+/* Small desktop: 3 columns */
+@media (min-width: 1024px) {
+  .screenshot-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large desktop: 4 columns */
+@media (min-width: 1400px) {
+  .screenshot-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 </style>

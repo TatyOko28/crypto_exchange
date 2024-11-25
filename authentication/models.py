@@ -2,27 +2,18 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
-    phone_number = models.CharField(max_length=15, blank=True)
-    is_verified = models.BooleanField(default=False)
-    verification_token = models.CharField(max_length=100, null=True, blank=True)
-    security_code = models.CharField(max_length=6, blank=True)
-    email_verified = models.BooleanField(default=False)
-    kyc_verified = models.BooleanField(default=False)
-    last_login_ip = models.GenericIPAddressField(null=True, blank=True)
-    failed_login_attempts = models.IntegerField(default=0)
-    account_locked = models.BooleanField(default=False)
-    
-    
-    def set_security_code(self, code):
-        """Définir le code de sécurité de l'utilisateur"""
-        if len(code) != 6 or not code.isdigit():
-            raise ValueError("Le code de sécurité doit être composé de 6 chiffres")
-        self.security_code = code
-        self.save()
+    phone_number = models.CharField(max_length=15, blank=True, null=True)
+    verification_status = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    def check_security_code(self, code):
-        """Vérifier le code de sécurité"""
-        return self.security_code == code
+    class Meta:
+        db_table = 'auth_user'
+        verbose_name = 'User'
+        verbose_name_plural = 'Users'
+
+    def __str__(self):
+        return self.username
 
 class KYCDocument(models.Model):
     DOCUMENT_TYPES = (
